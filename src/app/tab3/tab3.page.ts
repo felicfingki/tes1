@@ -43,8 +43,8 @@ export class Tab3Page {
         itemRef.getDownloadURL().then((url)=>{
           this.urlImageStorage.unshift(url);
         });
-        refImage.getMetadata().then((metada)=> {
-          this.namaFoto.unshift(metada.filepath)
+        refImage.getMetadata().then((metadata)=> {
+          this.namaFoto.unshift(metadata.filepath)
         });
       });
     }).catch((error)=>{

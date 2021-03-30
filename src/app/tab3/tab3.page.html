@@ -9,9 +9,9 @@
 <ion-content [fullscreen]="true">
   <ion-grid>
     <ion-row>
-      <ion-col size="3" *ngFor="let iFoto of urlImageStorage; let iNama of namaFoto; index as position">
+      <ion-col size="3" *ngFor="let iFoto of urlImageStorage; index as position">
         <ion-img [src]="iFoto">
-          <h5>{{iNama}}</h5>
+          <h5>{{namaFoto[index]}}</h5>
   
         </ion-img>
       </ion-col>
